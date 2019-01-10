@@ -2,17 +2,18 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {            
   //your code here 
-  String google = e.substring(2, 12);
-  double dNum = Double.parseDouble(google);
-  for (int i = 2; i <= 12; i++)
-{
   
+  for (int i = 2; i <= e.length()-12; i++){
+  String google = e.substring(i, i+10);
+  double dNum = Double.parseDouble(google);
     if (isPrime(dNum) == true) 
-      System.out.println(dNum);
+    System.out.print(dNum);
+  }
 }
 
-  
-}
+
+
+
 public void draw()  
 {   
   //not needed for this assignment
